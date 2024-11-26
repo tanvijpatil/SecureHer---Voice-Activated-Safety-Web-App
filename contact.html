@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contactstyle.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Emergency Contacts</h1>
+        
+        
+        <form id="contactForm">
+            <div class="contact-group">
+                <label for="policeContact">Police</label>
+                <input type="tel" id="policeContact" placeholder="Enter Police Contact">
+            </div>
+            <div class="contact-group">
+                <label for="nirbhayaContact">Nirbhaya</label>
+                <input type="tel" id="nirbhayaContact" placeholder="Enter Nirbhaya Contact">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <h2>Enter Your Contacts</h2>
+            <div id="contactList">
+                <div class="personal-contact">
+                    <button type="button" class="add-btn" onclick="addContact()">+</button>
+                    <input type="tel" class="contact-input" placeholder="+91">
+                </div>
+            </div>
+            
+            <button type="submit" class="save-btn">Save Contacts</button>
+        </form>
+    </div>
+    <script src="contactJs.js"></script>
+</body>
+</html>

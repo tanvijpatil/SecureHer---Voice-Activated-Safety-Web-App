@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="speechToTextstyle.css">
+
+</head>
+<body>
+
+    <h1>Speech Recognition</h1>
+
+    <div class="button-container">
+        <button id="record-btn" class="btn record-btn">Record</button>
+        <button id="stop-btn" class="btn stop-btn" disabled>Stop</button>
+
+    </div>
+
+    <div class="output">
+        <p id="recognized-text">Recognized text will appear here...</p>
+    </div>
+    <div class="submit-container">
+        <button id="submit-btn" class="btn submit-btn" disabled>Submit</button>
+    </div>
+    <script src="speechToTextJs.js"></script>
+
+</body>
+</html>
